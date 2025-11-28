@@ -1,0 +1,544 @@
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #E4E6F0;
+   font-family: "Roboto", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+   font-variation-settings:
+      "wdth" 100;
+}
+
+/* ========== FEATURES ========== */
+
+.features_container {
+   max-width: 1440px;
+   width: 100%;
+   margin: 0 auto;
+   background-color: lightcyan;
+   /* probably just for debugging */
+}
+
+.features_inner {
+   background-color: #fff;
+   padding-top: 171px;
+   padding-bottom: 174px;
+}
+
+.features_header {
+   text-align: center;
+   color: rgba(61, 79, 159, 1);
+}
+
+.features_header_title {
+   font-size: 10px;
+   font-weight: 500;
+   line-height: 12px;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+}
+
+.features_header_text {
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 28px;
+   letter-spacing: 0.0em;
+   padding-top: 20px;
+   margin-bottom: 94px;
+}
+
+.cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 67px;
+   margin: 0 auto;
+}
+
+.cards_item {
+   width: 140px;
+   text-align: center;
+   min-height: 254px;
+}
+
+.cards_item_title {
+   color: rgba(64, 116, 248, 1);
+   font-size: 14px;
+   font-weight: 700;
+   line-height: 16px;
+   letter-spacing: 0.0em;
+   padding-top: 28px;
+}
+
+.cards_item_text {
+   color: rgba(173, 179, 203, 1);
+   font-size: 11px;
+   font-weight: 500;
+   line-height: 13px;
+   letter-spacing: 0.0em;
+   padding-top: 34px;
+}
+
+/* features_buttons */
+
+.features_buttons {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 111px;
+   padding-top: 92px;
+   font-size: 13px;
+   font-weight: 700;
+   line-height: 15px;
+   letter-spacing: 0.0em;
+   text-align: center;
+}
+
+.features_buttons_read_more,
+.features_buttons_get_started {
+   width: 113px;
+   height: 43px;
+   border-radius: 2px;
+   align-content: center;
+   text-decoration: none;
+}
+
+/* only colors differ */
+
+.features_buttons_read_more {
+   background: rgba(255, 215, 215, 1);
+   color: rgba(212, 63, 63, 1);
+}
+
+.features_buttons_get_started {
+   background: rgba(210, 225, 255, 1);
+   color: rgba(58, 121, 255, 1);
+}
+
+/* ========= Stats =============*/
+
+.stats_container {
+   max-width: 1440px;
+   width: 100%;
+   margin: 0 auto;
+   background-color: lightcyan;
+}
+
+.stats_inner {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+/* 1) Make both halves share the same layout & spacing */
+
+.stats_left,
+.stats_right {
+   /* equal vertical padding on both sides */
+   padding-top: 55px;
+   padding-bottom: 66px;
+   display: grid;
+   grid-template-rows: auto auto;
+   /* icon, then text block */
+   row-gap: 12px;
+}
+
+.stats_left {
+   width: 50%;
+   padding-right: 90px;
+   text-align: right;
+   color: rgba(255, 255, 255, 1);
+   background: #5E80FF;
+   background: linear-gradient(90deg, rgba(94, 128, 255, 1) 0%, rgba(147, 170, 250, 1) 100%);
+}
+
+/* 2) Fix the icon box height and center the SVG inside it */
+.stats_left_img,
+.stats_right_img {
+   height: 90px;
+   /* choose the height you want for all icons */
+   display: flex;
+   align-items: center;
+}
+
+.stats_left_img {
+   justify-content: flex-end;
+}
+
+.stats_right_img {
+   justify-content: flex-start;
+}
+
+/* 3) Scale SVGs to the box without distortion */
+/* .stats_left_img img,
+.stats_right_img img {
+   height: 100%;
+   width: auto;
+} */
+
+.stats_left_number {
+   font-size: 48px;
+   font-weight: 400;
+   line-height: 56px;
+   letter-spacing: 0.03em;
+
+}
+
+.stats_left_text {
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 21px;
+   letter-spacing: 0.03em;
+   /* padding-top: 18px; */
+   max-width: 260px;
+   margin: 0 0 0 auto;
+   padding-top: 18px;
+}
+
+.stats_right {
+   width: 50%;
+   padding-left: 90px;
+   color: rgba(94, 128, 255, 1);
+   background: #d7e0f7;
+   background: linear-gradient(90deg, rgba(215, 224, 247, 1) 0%, rgba(171, 195, 255, 1) 100%);
+}
+
+.stats_right_number {
+   font-size: 48px;
+   font-weight: 400;
+   line-height: 56px;
+   letter-spacing: 0.03em;
+}
+
+.stats_right_text {
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 21px;
+   letter-spacing: 0.03em;
+   max-width: 260px;
+   padding-top: 18px;
+}
+
+/* ========== BLOG ========== */
+
+.blog_container {
+   max-width: 1440px;
+   width: 100%;
+   margin: 0 auto;
+   background-color: lightcyan;
+}
+
+.blog_inner {
+   background-color: #fff;
+   padding-top: 105px;
+   padding-bottom: 213px;
+}
+
+.blog_header {
+   margin: 0 auto;
+   color: rgba(61, 79, 159, 1);
+   margin-bottom: 90px;
+}
+
+.blog_header_title {
+   display: grid;
+   justify-self: start;
+   align-self: center;
+   min-width: 97px;
+   margin: 0 auto;
+   font-size: 10px;
+   font-weight: 500;
+   line-height: 12px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   margin-bottom: 19.5px;
+}
+
+.blog_header_text {
+   display: grid;
+   justify-self: center;
+   align-self: start;
+   min-width: 234px;
+   min-height: 28px;
+   margin: 0 auto;
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 28px;
+   letter-spacing: 0em;
+}
+
+.blog_card {
+   width: 958px;   
+   border-radius: 20px;
+   margin: 0 auto;
+   padding: 67px 41px 64px 35px;
+   display: flex;
+   justify-content: center;
+   gap: 67px;
+   box-shadow:  0px 15px 80px 10px rgba(239, 244, 255, 1);
+   background: rgba(255, 255, 255, 1);
+   /* background-color: rgb(252, 252, 236); */
+   /* just for debugging */
+}
+
+/* blog gallery */
+
+.blog_card_gallery {
+   display: grid;
+   grid-template-areas:
+      "img_1 img_2"
+      "img_1 img_3";
+   column-gap: 12.8px;
+   row-gap: 13.7px;
+}
+
+.gallery_img_1,
+.gallery_img_2,
+.gallery_img_3 {
+   border-radius: 5px;
+   box-shadow: 0px 15px 100px 0px rgba(229, 235, 248, 1);
+   background-repeat: no-repeat;
+}
+
+/* big image */
+
+.gallery_img_1 {
+   width: 267px;
+   height: 267px;
+   background:
+      linear-gradient(12.99deg,
+         rgba(255, 198, 53, 0.44),
+         rgba(255, 226, 153, 0.93),
+         rgba(255, 159, 90, 0) 100%),
+      url(../img/blog_img_1.png);
+   grid-area: img_1;
+   place-self: center;
+}
+
+/* small images */
+
+.gallery_img_2 {
+   width: 126px;
+   height: 126px;
+   background:
+      linear-gradient(27.61deg,
+         rgba(255, 53, 53, 0.48),
+         rgba(255, 179, 90, 0) 100%),
+      url(../img/blog_img_2.png);
+   grid-area: img_2;
+   place-self: center;
+}
+
+.gallery_img_3 {
+   width: 126px;
+   height: 126px;
+   background:
+      linear-gradient(13.50deg,
+         rgba(53, 170, 255, 0.68),
+         rgba(90, 136, 255, 0) 100%),
+      url(../img/blog_img_3.png);
+   grid-area: img_3;
+   place-self: center;
+}
+
+/* article text */
+
+.blog_card_article {
+   max-width: 408px;
+   min-height: 267px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.blog_card_article_header {
+   display: grid;
+   gap: 35px;
+}
+
+.blog_card_article_title {
+   color: rgba(61, 79, 159, 1);
+   font-size: 36px;
+   font-weight: 400;
+   line-height: 42px;
+   letter-spacing: 0em;
+   /* margin-bottom: 35px; */
+}
+
+.blog_card_article_text {
+   color: rgba(141, 150, 189, 1);
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 16px;
+   letter-spacing: 0.03em;
+}
+
+.blog_card_article_btn {
+   display: grid;
+   place-items: center;
+   /* shorthand for align-items + justify-items */
+   width: 113px;
+   height: 43px;
+   border-radius: 2px;
+   background: rgba(210, 225, 255, 1);
+   color: rgba(58, 121, 255, 1);
+   font-family: Roboto;
+   font-size: 13px;
+   font-weight: 700;
+   line-height: 15px;
+   letter-spacing: 0em;
+   text-decoration: none;
+}
+
+/* ========= MEDIA QUERIES ======== */
+
+@media screen and (max-width: 1024px) {
+   .blog_card {
+      max-width: 500px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 57px;
+   }
+}
+
+@media screen and (max-width: 769px) {
+
+   .features_inner {
+      padding: 80px 15px 80px;
+
+   }
+
+   .stats_inner {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .stats_right {
+      width: 100%;
+   }
+
+   .stats_left {
+      width: 100%;
+   }
+
+   .blog_inner {
+      padding-top: 100px;
+      padding-bottom: 100px;
+   }
+
+}
+
+@media screen and (max-width: 560px) {
+
+   .blog_inner {
+      padding-top: 80px;
+      padding-bottom: 80px;
+   }
+
+   .blog_header {
+      margin-bottom: 50px;
+   }
+
+   .blog_card {
+      max-width: 360px;
+      gap: 40px;
+   }
+
+   .blog_card_gallery {
+      display: grid;
+      grid-template-areas:
+         "img_1 img_1"
+         "img_2 img_3";
+      column-gap: 12.8px;
+      row-gap: 13.7px;
+   }
+
+   .gallery_img_2 {
+      grid-area: img_2;
+      place-self: center start;
+   }
+
+   .gallery_img_3 {
+      grid-area: img_3;
+      place-self: center end;
+   }
+
+}
+
+@media screen and (max-width: 425px) {
+
+   .features_buttons {
+      padding-top: 20px;
+      gap: 20px;
+   }
+
+   .stats_left {
+      padding-right: 40px;
+      padding-left: 15px;
+   }
+
+   .stats_right {
+      padding-left: 40px;
+      padding-right: 15px;
+   }
+
+   .blog_inner {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+
+   .blog_card {
+      max-width: 270px;
+   }
+
+   .blog_card_gallery {
+      display: grid;
+      grid-template-areas:
+         "img_1"
+         "img_2"
+         "img_3";
+      gap: 12px;
+   }
+
+   .gallery_img_1 {
+      width: 200px;
+      height: 200px;
+   }
+
+   .gallery_img_2,
+   .gallery_img_3 {
+      width: 160px;
+      height: 160px;
+      place-self: center;
+      background-size: contain;
+      background-size: cover;
+   }
+
+   .blog_card_article {
+      max-width: 408px;
+      min-height: 267px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0 15px;
+   }
+
+   .blog_card_article_header {
+      gap: 15px;
+      margin-bottom: 15px;
+   }
+
+   .blog_card {
+      padding: 10px;
+      gap: 30px;
+   }
+}
+
