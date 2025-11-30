@@ -275,7 +275,7 @@ body {
 }
 
 .blog_card {
-   width: 958px;   
+   max-width: 958px;   
    border-radius: 20px;
    margin: 0 auto;
    padding: 67px 41px 64px 35px;
